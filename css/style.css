@@ -1,0 +1,24 @@
+@import './components/global.css';
+@import './components/profile.css';
+@import './components/experience.css';
+@import './components/hobbies.css';
+@import './components/technologie.css';
+@import './components/projects.css';
+@import './components/blogs.css';
+@import './components/footer.css';
+
+/* INFO PORTFOLIO */
+.info-portfolio {
+    display: flex;
+    gap: 4.4rem 0;
+    flex-direction: column;
+}
+.info-portfolio .card {
+    max-width: 41.3rem;
+    margin-inline: auto;
+}
+@media (max-width: 600px) {
+    .info-portfolio .card {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,123 @@
+/* RESET */
+:root {
+    --p: #2F80ED;
+    --c1: #333;
+    --c2: #4F4F4F;
+    --c3: #828282;
+    --c4: #C4C4C4;
+    --c5: #E0E0E0;
+    --c6: #F2F2F2;
+    --w: #FFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+body {
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: var(--c6);
+    color: var(--c1);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ALL */
+.title {
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    font-weight: 500;
+    color: var(--c2);
+}
+.subtitle {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    font-weight: 500;
+    color: var(--c2);
+}
+.btn {
+    font-size: clamp(1.5rem, 5vw, 1.8rem);
+    font-weight: 500;
+    color: var(--p);
+    background: transparent;
+    border-radius: 1.2rem;
+    padding-block: 1.2rem;
+    padding-inline: 4rem;
+    border: 1px solid var(--p);
+    text-decoration: none;
+    transition: .3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn.active,
+.btn:hover,
+.btn:focus {
+    background: var(--p);
+    color: var(--w);
+}
+.btn.active:hover,
+.btn.active:focus {
+    filter: brightness(1.2);
+}
+.container {
+    max-width: 160rem;
+    padding: 3rem 4.5rem;
+    margin-inline: auto;
+
+    display: grid;
+    justify-content: space-between;
+    gap: 3rem;
+    grid-template-columns: 1fr 2fr;
+}
+.card {
+    width: 100%;
+    min-width: 25rem;
+    /* max-width: 41.3rem; */
+    /* margin-inline: auto; */
+    background: var(--w);
+    border-radius: 1.2rem;
+    box-shadow: 0 .4rem 3.2rem rgba(0, 0, 0, .12);
+
+    padding-top: 2.2rem;
+    padding-bottom: 3.6rem;
+    padding-inline: 2.2rem;
+}
+.header-card {
+    margin-bottom: 1.6rem;
+}
+.header-card.card {
+    padding-block: 2.5rem;
+    padding-inline: 1.8rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-inline: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        width: 100%;
+    }
+    .btn {
+        font-size: clamp(1.4rem, 4vw, 1.6rem);
+        padding-block: .8rem;
+        padding-inline: 2.5rem;
+    }
+}

@@ -1,0 +1,22 @@
+/* FOOTER */
+.footer {
+    width: 100%;
+    margin-top: clamp(5rem, 10vw, 7rem);
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-align: center;
+    justify-self: center;
+    color: #A9A9A9;
+    padding-block: .5rem;
+}
+.footer a {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color .3s ease;
+}
+.footer a:hover {
+    color: var(--c1);
+}

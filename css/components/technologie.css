@@ -1,0 +1,95 @@
+/* ===== TECHNOLOGIE ===== */
+#technologie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4.8rem;
+}
+#technologie > * {
+   flex: 1 1 10rem;
+}
+#technologie .tech {
+    align-self: baseline;
+ }
+#technologie .tech .function {
+    font-size: clamp(1.5rem, 5vw, 1.8rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--c2);
+    margin-bottom: 1.6rem;
+}
+#technologie .tech-type-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#technologie .tech-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+#technologie .tech-type:not(:last-child) {    
+    margin-bottom: 1.6rem;
+}
+
+#technologie .tech-type .name {    
+    display: block;
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+    flex: 2;
+}
+
+#technologie .tech-type .bar {
+    flex: 3;
+    width: 100%;
+    height: .9rem;
+    background: var(--c4);
+    border-radius: 1.2rem;
+    position: relative;
+}
+#technologie .tech-type .bar .load {
+    background: var(--p);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+@media (max-width: 800px) {
+    #technologie .tech-type .name,
+    #technologie .tech-type .bar {    
+        flex: initial;
+    }
+}
+@media (max-width: 600px) {
+    #technologie .tech-type .bar {
+        width: 50%;
+    }
+} 
+
+#technologie .tech-type [data-name="reactJS"] .load {
+    width: 65%;
+}
+
+#technologie .tech-type [data-name="js"] .load {
+    width: 83%;
+}
+#technologie .tech-type [data-name="css"] .load {
+    width: 92%;
+}
+#technologie .tech-type [data-name="vue"] .load {
+    width: 65%;
+}
+#technologie .tech-type [data-name="redux"] .load {
+    width: 83%;
+}
+#technologie .tech-type [data-name="reactNative"] .load {
+    width: 92%;
+}
+#technologie .tech-type [data-name="figma"] .load {
+    width: 65%;
+}
+#technologie .tech-type [data-name="photoshop"] .load {
+    width: 83%;
+}
