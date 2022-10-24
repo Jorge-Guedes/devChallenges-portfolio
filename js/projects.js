@@ -6,4 +6,5 @@ let projectsJson = [
     {id: 5, name: "Interior Consultant", img: "./assets/preview/preview-interior-consultant.png", urlProject: "https://jorgeguedes-interior-consultant.netlify.app/", urlCode: "https://github.com/Jorge-Guedes/devChallenges-interior-consultant"},
     {id: 6, name: "My Team", img: "./assets/preview/preview-my-team-page.png", urlProject: "https://jorgeguedes-my-team.netlify.app/", urlCode: "https://github.com/Jorge-Guedes/devChallenges-my-team-page"},
     {id: 7, name: "404 Not Found", img: "./assets/preview/preview-404-not-found.png", urlProject: "https://jorgeguedes-404-not-found.netlify.app/", urlCode: "https://github.com/Jorge-Guedes/devChallenges-404-not-found"},
+    {id: 8, name: "Portfolio", img: "./assets/preview/preview-portfolio.png", urlProject: "https://jorgeguedes-404-not-found.netlify.app/", urlCode: "https://github.com/Jorge-Guedes/devChallenges-404-not-found"}
 ]
