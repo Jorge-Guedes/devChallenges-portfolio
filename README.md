@@ -10,11 +10,11 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://jorgeguedes-edie-homepage.netlify.app/">
+    <a href="https://devchallenges.io/solutions/RzME6hynf78a69Jn53oN">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
+    <a href="https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt">
       Challenge
     </a>
   </h3>
